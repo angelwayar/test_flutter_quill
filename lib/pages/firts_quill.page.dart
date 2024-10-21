@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_quill/flutter_quill.dart';
 import 'package:flutter_quill_extensions/flutter_quill_extensions.dart';
-import 'package:test_flutter_quill/embds.dart';
+import 'package:test_flutter_quill/pages/embds.dart';
 
-import 'widgets/my_quill_editor.widget.dart';
-import 'widgets/my_quill_toolbar.widget.dart';
+import '../widgets/my_quill_editor.widget.dart';
+import '../widgets/my_quill_toolbar.widget.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class FirstQuillPage extends StatefulWidget {
+  const FirstQuillPage({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<FirstQuillPage> createState() => _FirstQuillPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _FirstQuillPageState extends State<FirstQuillPage> {
   var deltaJson;
   final _controller = QuillController.basic();
   final _editorFocusNode = FocusNode();
